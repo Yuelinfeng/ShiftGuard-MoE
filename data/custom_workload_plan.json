@@ -1,0 +1,34 @@
+{
+  "stable": [
+    { "domain": "code", "count": 18 },
+    { "domain": "code", "count": 18 },
+    { "domain": "code", "count": 18 },
+    { "domain": "code", "count": 18 },
+    { "domain": "code", "count": 18 },
+    { "domain": "code", "count": 18 }
+  ],
+  "lru_break": [
+    { "domain": "code", "count": 18 },
+    { "domain": "math", "count": 18 },
+    { "domain": "medicine", "count": 18 },
+    { "domain": "creative", "count": 18 },
+    { "domain": "code", "count": 18 },
+    { "domain": "math", "count": 18 }
+  ],
+  "lfu_break": [
+    { "domain": "code", "count": 54 },
+    { "domain": "math", "count": 18 },
+    { "domain": "medicine", "count": 18 },
+    { "domain": "creative", "count": 18 },
+    { "domain": "math", "count": 18 },
+    { "domain": "medicine", "count": 18 }
+  ],
+  "mixed_shift": [
+    { "counts": { "code": 12, "math": 3, "medicine": 2, "creative": 1 }, "shuffle": true },
+    { "counts": { "math": 9, "code": 4, "medicine": 3, "creative": 2 }, "shuffle": true },
+    { "counts": { "medicine": 9, "math": 4, "code": 3, "creative": 2 }, "shuffle": true },
+    { "counts": { "creative": 9, "medicine": 4, "math": 3, "code": 2 }, "shuffle": true },
+    { "counts": { "code": 6, "math": 4, "medicine": 4, "creative": 4 }, "shuffle": true },
+    { "counts": { "math": 5, "medicine": 5, "creative": 4, "code": 4 }, "shuffle": true }
+  ]
+}

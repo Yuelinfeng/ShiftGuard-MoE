@@ -1,0 +1,122 @@
+{
+  "stable": [
+    {
+      "scenario": "stable",
+      "window_index": 0,
+      "position": 0,
+      "prompt_id": "code_001",
+      "domain": "code"
+    },
+    {
+      "scenario": "stable",
+      "window_index": 0,
+      "position": 1,
+      "prompt_id": "code_000",
+      "domain": "code"
+    },
+    {
+      "scenario": "stable",
+      "window_index": 1,
+      "position": 2,
+      "prompt_id": "code_001",
+      "domain": "code"
+    },
+    {
+      "scenario": "stable",
+      "window_index": 1,
+      "position": 3,
+      "prompt_id": "code_000",
+      "domain": "code"
+    }
+  ],
+  "block_shift": [
+    {
+      "scenario": "block_shift",
+      "window_index": 0,
+      "position": 0,
+      "prompt_id": "code_000",
+      "domain": "code"
+    },
+    {
+      "scenario": "block_shift",
+      "window_index": 0,
+      "position": 1,
+      "prompt_id": "code_000",
+      "domain": "code"
+    },
+    {
+      "scenario": "block_shift",
+      "window_index": 1,
+      "position": 2,
+      "prompt_id": "creative_001",
+      "domain": "creative"
+    },
+    {
+      "scenario": "block_shift",
+      "window_index": 1,
+      "position": 3,
+      "prompt_id": "creative_000",
+      "domain": "creative"
+    }
+  ],
+  "medium_shift": [
+    {
+      "scenario": "medium_shift",
+      "window_index": 0,
+      "position": 0,
+      "prompt_id": "code_000",
+      "domain": "code"
+    },
+    {
+      "scenario": "medium_shift",
+      "window_index": 0,
+      "position": 1,
+      "prompt_id": "code_000",
+      "domain": "code"
+    },
+    {
+      "scenario": "medium_shift",
+      "window_index": 1,
+      "position": 2,
+      "prompt_id": "creative_001",
+      "domain": "creative"
+    },
+    {
+      "scenario": "medium_shift",
+      "window_index": 1,
+      "position": 3,
+      "prompt_id": "creative_000",
+      "domain": "creative"
+    }
+  ],
+  "severe_shift": [
+    {
+      "scenario": "severe_shift",
+      "window_index": 0,
+      "position": 0,
+      "prompt_id": "code_001",
+      "domain": "code"
+    },
+    {
+      "scenario": "severe_shift",
+      "window_index": 0,
+      "position": 1,
+      "prompt_id": "creative_001",
+      "domain": "creative"
+    },
+    {
+      "scenario": "severe_shift",
+      "window_index": 1,
+      "position": 2,
+      "prompt_id": "creative_001",
+      "domain": "creative"
+    },
+    {
+      "scenario": "severe_shift",
+      "window_index": 1,
+      "position": 3,
+      "prompt_id": "creative_001",
+      "domain": "creative"
+    }
+  ]
+}

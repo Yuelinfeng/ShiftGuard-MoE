@@ -1,0 +1,187 @@
+{
+  "mode": "tiny-random",
+  "model_id": "tiny-random-deepseek-v2",
+  "cache_capacity": 4,
+  "num_unique_prompts": 8,
+  "num_moe_layers": 4,
+  "domain_js_divergence": {
+    "code": {
+      "code": 0.0,
+      "creative": 0.068742,
+      "math": 0.176897,
+      "medicine": 0.119062
+    },
+    "creative": {
+      "code": 0.068742,
+      "creative": 0.0,
+      "math": 0.111263,
+      "medicine": 0.098725
+    },
+    "math": {
+      "code": 0.176897,
+      "creative": 0.111263,
+      "math": 0.0,
+      "medicine": 0.137237
+    },
+    "medicine": {
+      "code": 0.119062,
+      "creative": 0.098725,
+      "math": 0.137237,
+      "medicine": 0.0
+    }
+  },
+  "scenarios": {
+    "stable": {
+      "lru": {
+        "total_accesses": 432,
+        "total_hit_rate": 0.49537037037037035,
+        "first_window_hit_rate": 0.4878676470588235,
+        "post_shift_hit_rate": 0.5099264705882353,
+        "worst_window_hit_rate": 0.4878676470588235,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.4878676470588235
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.5099264705882353
+          }
+        ],
+        "drop_vs_stable": 0.0
+      },
+      "lfu": {
+        "total_accesses": 432,
+        "total_hit_rate": 0.5254629629629629,
+        "first_window_hit_rate": 0.4985294117647059,
+        "post_shift_hit_rate": 0.5856617647058824,
+        "worst_window_hit_rate": 0.4985294117647059,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.4985294117647059
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.5856617647058824
+          }
+        ],
+        "drop_vs_stable": 0.0
+      }
+    },
+    "block_shift": {
+      "lru": {
+        "total_accesses": 288,
+        "total_hit_rate": 0.4618055555555556,
+        "first_window_hit_rate": 0.5062500000000001,
+        "post_shift_hit_rate": 0.39583333333333337,
+        "worst_window_hit_rate": 0.39583333333333337,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.5062500000000001
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.39583333333333337
+          }
+        ],
+        "drop_vs_stable": 0.03356481481481477
+      },
+      "lfu": {
+        "total_accesses": 288,
+        "total_hit_rate": 0.5486111111111112,
+        "first_window_hit_rate": 0.5875,
+        "post_shift_hit_rate": 0.5083333333333333,
+        "worst_window_hit_rate": 0.5083333333333333,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.5875
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.5083333333333333
+          }
+        ],
+        "drop_vs_stable": -0.02314814814814825
+      }
+    },
+    "medium_shift": {
+      "lru": {
+        "total_accesses": 288,
+        "total_hit_rate": 0.4618055555555556,
+        "first_window_hit_rate": 0.5062500000000001,
+        "post_shift_hit_rate": 0.39583333333333337,
+        "worst_window_hit_rate": 0.39583333333333337,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.5062500000000001
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.39583333333333337
+          }
+        ],
+        "drop_vs_stable": 0.03356481481481477
+      },
+      "lfu": {
+        "total_accesses": 288,
+        "total_hit_rate": 0.5486111111111112,
+        "first_window_hit_rate": 0.5875,
+        "post_shift_hit_rate": 0.5083333333333333,
+        "worst_window_hit_rate": 0.5083333333333333,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.5875
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.5083333333333333
+          }
+        ],
+        "drop_vs_stable": -0.02314814814814825
+      }
+    },
+    "severe_shift": {
+      "lru": {
+        "total_accesses": 376,
+        "total_hit_rate": 0.425531914893617,
+        "first_window_hit_rate": 0.43786764705882353,
+        "post_shift_hit_rate": 0.4,
+        "worst_window_hit_rate": 0.4,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.43786764705882353
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.4
+          }
+        ],
+        "drop_vs_stable": 0.06983845547675332
+      },
+      "lfu": {
+        "total_accesses": 376,
+        "total_hit_rate": 0.4627659574468085,
+        "first_window_hit_rate": 0.44852941176470584,
+        "post_shift_hit_rate": 0.5,
+        "worst_window_hit_rate": 0.44852941176470584,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.44852941176470584
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.5
+          }
+        ],
+        "drop_vs_stable": 0.06269700551615442
+      }
+    }
+  }
+}
