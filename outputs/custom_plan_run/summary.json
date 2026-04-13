@@ -1,0 +1,315 @@
+{
+  "mode": "real",
+  "model_id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+  "cache_capacity": 8,
+  "num_unique_prompts": 24,
+  "num_moe_layers": 26,
+  "domain_js_divergence": {
+    "code": {
+      "code": 0.0,
+      "creative": 0.068147,
+      "math": 0.051569,
+      "medicine": 0.067184
+    },
+    "creative": {
+      "code": 0.068147,
+      "creative": 0.0,
+      "math": 0.073312,
+      "medicine": 0.060763
+    },
+    "math": {
+      "code": 0.051569,
+      "creative": 0.073312,
+      "math": 0.0,
+      "medicine": 0.055156
+    },
+    "medicine": {
+      "code": 0.067184,
+      "creative": 0.060763,
+      "math": 0.055156,
+      "medicine": 0.0
+    }
+  },
+  "scenarios": {
+    "stable": {
+      "lru": {
+        "total_accesses": 890136,
+        "total_hit_rate": 0.3612886120772556,
+        "first_window_hit_rate": 0.36084400026176056,
+        "post_shift_hit_rate": 0.36090436049161234,
+        "worst_window_hit_rate": 0.36084400026176056,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.36084400026176056
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.36090436049161234
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.36090436049161234
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.36090436049161234
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.36090436049161234
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.36090436049161234
+          }
+        ],
+        "drop_vs_stable": 0.0
+      },
+      "lfu": {
+        "total_accesses": 890136,
+        "total_hit_rate": 0.24737118822292323,
+        "first_window_hit_rate": 0.24469691886292733,
+        "post_shift_hit_rate": 0.2476370538236671,
+        "worst_window_hit_rate": 0.24469691886292733,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.24469691886292733
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.2476370538236671
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.2476370538236671
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.2476370538236671
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.2476370538236671
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.2476370538236671
+          }
+        ],
+        "drop_vs_stable": 0.0
+      }
+    },
+    "lru_break": {
+      "lru": {
+        "total_accesses": 829296,
+        "total_hit_rate": 0.3557656132430399,
+        "first_window_hit_rate": 0.36084400026176056,
+        "post_shift_hit_rate": 0.3525111317607467,
+        "worst_window_hit_rate": 0.3489772511261291,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.36084400026176056
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.35139421980874597
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.3498735355225298
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.3489772511261291
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.3609164325375827
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.35139421980874597
+          }
+        ],
+        "drop_vs_stable": 0.005522998834215698
+      },
+      "lfu": {
+        "total_accesses": 829296,
+        "total_hit_rate": 0.2261605024020374,
+        "first_window_hit_rate": 0.24469691886292733,
+        "post_shift_hit_rate": 0.2219225073654854,
+        "worst_window_hit_rate": 0.21320474834328823,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.24469691886292733
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.21320474834328823
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.21838086462007222
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.2171851216971112
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.2476370538236671
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.21320474834328823
+          }
+        ],
+        "drop_vs_stable": 0.02121068582088584
+      }
+    },
+    "lfu_break": {
+      "lru": {
+        "total_accesses": 1112904,
+        "total_hit_rate": 0.35622120146930913,
+        "first_window_hit_rate": 0.36088424041499506,
+        "post_shift_hit_rate": 0.3503049667669302,
+        "worst_window_hit_rate": 0.3489772511261291,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.36088424041499506
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.35139421980874597
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.3498735355225298
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.3489772511261291
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.3514062918547163
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.3498735355225298
+          }
+        ],
+        "drop_vs_stable": 0.005067410607946465
+      },
+      "lfu": {
+        "total_accesses": 1112904,
+        "total_hit_rate": 0.22816253693040908,
+        "first_window_hit_rate": 0.2466570088367538,
+        "post_shift_hit_rate": 0.2160712695247664,
+        "worst_window_hit_rate": 0.21320474834328823,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.2466570088367538
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.21320474834328823
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.21838086462007222
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.2171851216971112
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.21320474834328823
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.21838086462007222
+          }
+        ],
+        "drop_vs_stable": 0.019208651292514145
+      }
+    },
+    "mixed_shift": {
+      "lru": {
+        "total_accesses": 823056,
+        "total_hit_rate": 0.3555055792072471,
+        "first_window_hit_rate": 0.3604672820944279,
+        "post_shift_hit_rate": 0.3518993419952654,
+        "worst_window_hit_rate": 0.3463599459154958,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.3604672820944279
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.3463599459154958
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.35594352276737556
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.3498676807922659
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.35296017911063454
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.3543653813905553
+          }
+        ],
+        "drop_vs_stable": 0.0057830328700084754
+      },
+      "lfu": {
+        "total_accesses": 823056,
+        "total_hit_rate": 0.2611754242724675,
+        "first_window_hit_rate": 0.2733942914357236,
+        "post_shift_hit_rate": 0.25710733998713187,
+        "worst_window_hit_rate": 0.2506196469970902,
+        "window_hit_rates": [
+          {
+            "window_index": 0,
+            "average_hit_rate": 0.2733942914357236
+          },
+          {
+            "window_index": 1,
+            "average_hit_rate": 0.2545565904219005
+          },
+          {
+            "window_index": 2,
+            "average_hit_rate": 0.259189663858545
+          },
+          {
+            "window_index": 3,
+            "average_hit_rate": 0.2506196469970902
+          },
+          {
+            "window_index": 4,
+            "average_hit_rate": 0.26541038664416217
+          },
+          {
+            "window_index": 5,
+            "average_hit_rate": 0.2557604120139616
+          }
+        ],
+        "drop_vs_stable": -0.013804236049544255
+      }
+    }
+  }
+}
