@@ -103,6 +103,24 @@ python run_shift_experiment.py ^
 - `window_hit_rates.png`: shift 后平均命中率对比图。
 - `summary.json`: 聚合统计。
 
+## 分析脚本
+
+实验输出目录生成后，可以再运行分析脚本，基于 `summary.json` 和 `prompt_metrics.csv` 重新绘图并生成一份 Markdown 摘要：
+
+```bash
+python analyze_experiment_outputs.py ^
+  --input-dir outputs/custom_plan_run
+```
+
+默认会把分析结果写到 `outputs/custom_plan_run/analysis/`，包括：
+
+- `scenario_summary.csv`: 便于后续表格分析的聚合结果。
+- `scenario_total_hit_rate.png`: 不同场景下 LRU/LFU 的总命中率对比。
+- `scenario_drop_vs_stable.png`: 每个场景相对 stable 的退化幅度。
+- `window_trends_by_policy.png`: 按 window 观察不同场景的命中率演化。
+- `prompt_rolling_hit_rate.png`: 按 prompt 位置绘制滚动命中率。
+- `analysis_report.md`: 自动生成的实验结论摘要。
+
 `summary.json` 里最值得看的是：
 
 - `total_hit_rate`
